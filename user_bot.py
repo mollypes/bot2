@@ -14,9 +14,9 @@ import tasks
 
 logging.basicConfig(level=logging.INFO)
 
-API_TOKEN = '2079872666:AAGj-tH_4WasvGQCBvggT9tLzDAlj4OtAy0'
+API_TOKEN = '5337359559:AAEHMQ_K32fgBHm_XJfsgGa3sfc0BfTUs8Y'
 
-EARN = '💥 Заработать'
+EARN = '💎 Заработать'
 BALANCE = '💰 Баланс'
 WITHDRAW = '💸 Вывод'
 INVITE = '💌 Приглашенные'
@@ -25,9 +25,9 @@ HELP = '❓ Помощь'
 VAL = '₽'
 
 REFERRALS = 5
-MIN_WITHDRAW = 1000
+MIN_WITHDRAW = 3000
 
-BOT_NAME = 'User_1112_bot'
+BOT_NAME = 'BankOfSubsbot'
 
 storage = MemoryStorage()
 bot = Bot(token=API_TOKEN)

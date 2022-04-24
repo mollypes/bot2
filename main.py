@@ -20,7 +20,7 @@ from middlewares import AccessMiddleware
 
 logging.basicConfig(level=logging.INFO)
 
-API_TOKEN = '2096979220:AAGBIp0KXAar5aw4DDpE_WzEX1T-4HNAwJI'
+API_TOKEN = '5342785168:AAEAMraHrYNqgYrXCuGnDnzHttoy4jYIvWM'
 ACCESS_ID = '751728247' # Ars
 # ACCESS_ID = '1663296441'  # Ars2
 # ACCESS_ID = '480511953'  # Vlada
@@ -278,7 +278,7 @@ async def show_item(callback: CallbackQuery, category, tasks, action):
         await cheng_deadline(callback, tasks)
         make_callback_data(0)
     elif action == ACTIONS[3]:
-        db.delete('tasks', tasks)
+        await db.delete('tasks', tasks)
         await callback.message.edit_text(text="Задача удалена из базы данных!")
         make_callback_data(0)
 
